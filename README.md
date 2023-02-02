@@ -2,7 +2,9 @@
 
 This project is to Demo the challenge with issues #24430 (https://github.com/quarkusio/quarkus/issues/24430)
 
-When using this one needs to run a dockerized version of PostGIS like this:
+When running tests a PostGIS is automatically started. You do not need to do anything.
+
+When using this externally to a JUnit-test one needs to run a dockerized version of PostGIS like this:
 ```shell script
 docker network create quarkus-with-postgis
 docker run -d --net=quarkus-with-postgis --name postgis -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_USERNAME=postgres -p 5432:5432 postgis/postgis:14-master
