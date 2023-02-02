@@ -33,7 +33,7 @@ public class GreetingResource {
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
         doSomeJDBC();
-        return "Hello from THE RESTEasy Reactive";
+        return "Hello from RESTEasy Reactive";
     }
 
     private void doSomeJDBC() {
